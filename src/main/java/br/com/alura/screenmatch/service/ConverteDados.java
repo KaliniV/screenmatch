@@ -13,7 +13,8 @@ public class ConverteDados implements IConverteDados{
             
             // ObjectMapper mapper = new ObjectMapper();
             // mapper.readValue(json, classe);
-            // readValue -> ler o json e converte para classe que foi passada. 
+            // readValue -> ler o json e converte para classe 
+            // que foi passada. 
             return mapper.readValue(json, classe);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
